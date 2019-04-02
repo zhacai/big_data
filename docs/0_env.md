@@ -11,13 +11,18 @@ docker run --rm --name Hadoop -h hadoop \
     -p 50070:50070 \
     -ti hadoop -test bash
 
+若已运行，则进入容器bash
+docker exec -it 431f567641cf bash
+
 3.看集群情况
 Hadoop Browser
 http://localhost:8088
 
 http://localhost:50070
+
 HBase Browser
 http://localhost:60010
+
 Access by Jupyter Notebook
 http://localhost:8888/terminals/1
 
